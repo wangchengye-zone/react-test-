@@ -10,10 +10,17 @@ btnClickFn () {
   console.log('2',this);
 }
 
+  // render () {
+  //   return (
+  //     <div>
+  //       <button onClick = { this.btnClickFun}>react按钮</button>
+  //     </div>
+  //   )
+  // }
   render () {
     return (
       <div>
-        <button onClick = { this.btnClickFun}>react按钮</button>
+        <button onClick = { this.btnClickFn.bind(this)}>react按钮</button>
       </div>
     )
   }
